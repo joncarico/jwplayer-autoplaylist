@@ -1,10 +1,10 @@
 <script type="text/javascript">
     var playerInstance = jwplayer("jwplayer");
     playerInstance.setup({
-    		playlist: [
+    	playlist: [
             <?php
-            $dirname = "../relative/file/directory/";
-            $videos = glob($dirname."*.mp4");
+            $dir = "../relative/folder/";
+            $videos = glob($dir."*.mp4");
             $length = count($videos);
             $i = 0;
             foreach($videos as $video) {
