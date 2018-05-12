@@ -4,12 +4,8 @@
     	playlist: [
             <?php
             $dir = "../relative/folder/";
-            $videos = glob($dir."*.mp4");
-            $length = count($videos);
-            $i = 0;
-            foreach($videos as $video) {
+            foreach (glob($dir."*.mp4") as $video) {
                 echo '{"file": "' .$video. '"},';
-            $i++;
             }
             ?>
         ],
