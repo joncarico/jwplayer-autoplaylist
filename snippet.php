@@ -3,7 +3,7 @@
     playerInstance.setup({
     	playlist: [
             <?php
-            $dir = "../relative/folder/";
+            $dir = "/absolute/path/";
             foreach (glob($dir."*.mp4") as $video) {
                 echo '{"file": "' .$video. '"},';
             }
